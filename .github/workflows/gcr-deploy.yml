@@ -8,7 +8,7 @@ on:
 env:
   PROJECT_ID: ${{ secrets.GCR_PROJECT }}
   RUN_REGION: europe-west1
-  SERVICE_NAME: zinc-iterator-353413
+  SERVICE_NAME: be-well
 
 jobs:
   build:
