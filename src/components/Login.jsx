@@ -1,7 +1,8 @@
 import React from 'react';
 import jwtDecode from 'jwt-decode';
-import { useEffect } from 'react';
+import { useEffect, useState, } from 'react';
 import { useNavigate } from 'react-router-dom';
+import { useInterval } from 'usehooks-ts';
 import bcpic from '../assets/background.jpg';
 import logo from  '../assets/BeWellLogo.png';
 import { client } from '../client';
@@ -30,7 +31,8 @@ const Login = () => {
         navigate('/', {replace:true})
       })
   }
-  const google= window.google
+
+  const google = window.google
 
   useEffect(() => {
     
