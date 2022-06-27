@@ -30,9 +30,10 @@ const Login = () => {
         navigate('/', {replace:true})
       })
   }
+  const google= window.google
 
   useEffect(() => {
-    /* global google */
+    
     google.accounts.id.initialize({
       client_id: process.env.REACT_APP_GOOGLE_API_TOKEN,
       callback: handleCallbackResponse
